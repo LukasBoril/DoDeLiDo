@@ -1,5 +1,7 @@
 package com.example.dodelido_backend.DAO;
 
+import com.example.dodelido_backend.Util.Card;
+
 public class DAOCArdTest {
 
     public static void main(String[] args) {
@@ -7,7 +9,17 @@ public class DAOCArdTest {
         daocard.printAllCards();
         daocard.printNrOfCards();
 
-        System.out.println((int)(Math.random()*cardstack.size());
+        Card card = daocard.drawCard();
+        System.out.println(card.getAnimal()+" "+card.getColor());
+
+        card = daocard.drawCard();
+        System.out.println(card.getAnimal()+" "+card.getColor());
+
+        card = daocard.drawCard();
+        System.out.println(card.getAnimal()+" "+card.getColor());
+
+        card = daocard.drawCard();
+        System.out.println(card.getAnimal()+" "+card.getColor());
 
 
     }

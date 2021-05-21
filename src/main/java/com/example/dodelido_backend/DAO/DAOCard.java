@@ -28,9 +28,8 @@ public class DAOCard {
 
     public Card drawCard()
     {
-        return cardstack.get();
-
-        System.out.println((int)(Math.random()*cardstack.size());
+        int rando = (int)(Math.random()*cardstack.size());
+        return cardstack.get(rando);
     }
 
     public void printAllCards() {
